@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+        Copyright 2011 Alberto Perez Alonso
+ 
+        This file is part of Desconecta.
+
+    Desconecta is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Desconecta is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Desconecta.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainLayout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White">
+    
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/GetTime"
+		android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/MainLayout"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="15px"
+	    android:layout_marginBottom="8px"
+	    android:layout_marginLeft="20px"
+	    android:layout_marginRight="20px">
+	    <Button 
+	    	android:id="@+id/pickTime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/WhatTime"
+			android:onClick="clickPickTime"
+			android:layout_alignParentLeft="true">
+		</Button>
+	    <TextView 
+	    	android:id="@+id/timeDisplay"
+	    	style="@style/TimeText"
+	    	android:text="@string/DefaultTimeDisplay"
+	    	android:layout_alignParentRight="true"
+	    	android:layout_centerVertical="true">
+	    </TextView>
+    </RelativeLayout>
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/Days"
+		android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/GetTime"
+   	    android:layout_marginTop="5px"
+	    android:layout_marginBottom="5px"
+	    android:layout_marginLeft="20px"
+	    android:layout_marginRight="20px"
+	    android:layout_centerHorizontal="true">
+	    <CheckBox 
+			android:id="@+id/checkboxSunday"
+	        style="@style/CheckBoxDays"
+	        android:text="@string/Sunday" 
+	        android:onClick="clickCheckBox_Days"> 
+	    </CheckBox>
+		<CheckBox 
+			android:id="@+id/checkboxMonday"
+	        style="@style/CheckBoxDays"
+	        android:layout_below="@id/checkboxSunday"
+	        android:layout_alignLeft="@id/checkboxSunday"
+	        android:text="@string/Monday"
+			android:onClick="clickCheckBox_Days">
+		</CheckBox>
+		<CheckBox 
+			android:id="@+id/checkboxTuesday"
+	        style="@style/CheckBoxDays"
+	        android:layout_below="@id/checkboxMonday"
+	        android:layout_alignLeft="@id/checkboxSunday"
+	        android:text="@string/Tuesday"
+	        android:onClick="clickCheckBox_Days">
+		</CheckBox>
+		<CheckBox 
+			android:id="@+id/checkboxWednesday"
+			style="@style/CheckBoxDays"
+	        android:layout_below="@id/checkboxTuesday"
+	        android:layout_alignLeft="@id/checkboxSunday"
+	        android:text="@string/Wednesday"
+	        android:onClick="clickCheckBox_Days">     
+		</CheckBox>
+		<CheckBox 
+			android:id="@+id/checkboxThursday"
+		    style="@style/CheckBoxDays"
+			android:layout_toRightOf="@id/checkboxWednesday"
+	        android:text="@string/Thursday"
+	        android:onClick="clickCheckBox_Days"
+	        android:layout_marginLeft="65px"
+	        android:layout_alignBaseline="@id/checkboxSunday">
+		</CheckBox>
+		<CheckBox 
+			android:id="@+id/checkboxFriday"
+	        style="@style/CheckBoxDays"
+			android:layout_below="@id/checkboxThursday"
+	        android:layout_toRightOf="@id/checkboxMonday"
+	        android:layout_alignLeft="@id/checkboxThursday"
+        	android:layout_alignBaseline="@id/checkboxMonday"
+	        android:text="@string/Friday"
+	        android:onClick="clickCheckBox_Days">
+		</CheckBox>
+		<CheckBox 
+			android:id="@+id/checkboxSaturday"
+	        style="@style/CheckBoxDays"
+	        android:layout_below="@id/checkboxFriday"
+	        android:layout_toRightOf="@id/checkboxTuesday"
+	        android:layout_alignLeft="@id/checkboxThursday"
+	        android:layout_alignBaseline="@id/checkboxTuesday"	        
+	        android:text="@string/Saturday"
+	        android:onClick="clickCheckBox_Days">
+		</CheckBox>
+		<CheckBox 
+			android:id="@+id/checkboxAllDays"
+	        style="@style/CheckBoxDays"
+	        android:layout_below="@id/checkboxSaturday"
+	        android:layout_toRightOf="@id/checkboxWednesday"
+	        android:layout_alignLeft="@id/checkboxThursday"
+	        android:layout_alignBaseline="@id/checkboxWednesday"	        
+	        android:text="@string/AllDays"
+	        android:onClick="clickCheckBox_AllDays">
+		</CheckBox>
+    </RelativeLayout>
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/HeaderActivateAirPlaneModeAlarm"
+		android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/Days"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="10px"
+	    android:layout_marginBottom="10px"
+	    android:layout_marginLeft="20px"
+	    android:layout_marginRight="20px">
+	    <ToggleButton android:id="@+id/togglebuttonAlarmAirplaneMode"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textOn="@string/AlarmAirPlaneOn"
+	        android:textOff="@string/AlarmAirPlaneOff"
+	        android:enabled="false"
+	        android:onClick="clickAlarmAirplaneMode">
+		</ToggleButton>
+	</RelativeLayout>
+</RelativeLayout>
