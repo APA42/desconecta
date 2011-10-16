@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+        Copyright 2011 Alberto Perez Alonso
+ 
+        This file is part of Desconecta.
+
+    Desconecta is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Desconecta is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Desconecta.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+	<!-- Language Dependent -->
+    <string name="WhatTime">¿A qué hora?</string>
+    <string name="AlarmAirPlaneOn">Desactivar</string>
+    <string name="AlarmAirPlaneOff">Activar</string>
+    <string name="Sunday">Dom.</string>
+    <string name="Monday">Lun.</string>
+    <string name="Tuesday">Mar.</string>
+	<string name="Wednesday">Mié.</string>
+	<string name="Thursday">Jue.</string>
+	<string name="Friday">Vie.</string>
+	<string name="Saturday">Sáb.</string>
+	<string name="AllDays">Todos</string>
+	<!-- Notifications -->
+	<string name="NotificationText">Modo Avión se activará el</string>
+</resources>
