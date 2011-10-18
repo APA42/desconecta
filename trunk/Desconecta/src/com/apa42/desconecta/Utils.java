@@ -93,15 +93,21 @@ public class Utils
         {
         	Settings.System.putInt(context.getContentResolver(),Settings.System.AIRPLANE_MODE_ON, 0);
             Intent intent = new Intent(Intent.ACTION_AIRPLANE_MODE_CHANGED);
-            intent.putExtra("state", 0); 
+            //intent.putExtra("state", 0);
+            // FAIL: look at http://stackoverflow.com/questions/7086698/setting-airplane-mode-does-not-completely-work
+            // Classic bit twister error. The extra data argument in the broadcast intent needed to be true/false, not 1/0. Ugh!!!
+            intent.putExtra("state", false);
             context.sendBroadcast(intent); 
             return; 
         } 
         if(!isAirplaneModeOn && status) 
         {
         	Settings.System.putInt(context.getContentResolver(),Settings.System.AIRPLANE_MODE_ON, 1); 
-            Intent intent = new Intent (Intent.ACTION_AIRPLANE_MODE_CHANGED); 
-            intent.putExtra("state", 1); 
+            Intent intent = new Intent (Intent.ACTION_AIRPLANE_MODE_CHANGED);
+            //intent.putExtra("state", 1);
+            // FAIL, look at http://stackoverflow.com/questions/7086698/setting-airplane-mode-does-not-completely-work
+            // Classic bit twister error. The extra data argument in the broadcast intent needed to be true/false, not 1/0. Ugh!!!
+            intent.putExtra("state", true);
             context.sendBroadcast(intent);
             return; 
         }
