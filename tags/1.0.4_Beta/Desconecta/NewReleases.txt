@@ -1,0 +1,58 @@
+/*
+        Copyright 2011 Alberto Perez Alonso
+ 
+        This file is part of Desconecta.
+
+    Desconecta is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Desconecta is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Desconecta.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+****************************
+* versionCode = 1          *
+* versionName = 1.0.0 Beta *
+****************************
++) First Release 		   
+
+****************************
+* versionCode = 2          *
+* versionName = 1.0.1 Beta *
+****************************
++) Correct layout land for ADP2 (Ex. HTC Magic)
+
+****************************
+* versionCode = 3          *
+* versionName = 1.0.2 Beta *
+****************************
++) Change all UI => use acronyms for days names
+
+****************************
+* versionCode = 4          *
+* versionName = 1.0.3 Beta *
+****************************
++) Fixed bug getting system TIME_12_24. 
+At some devices, the function return null. The application uses AM/PM format by default. 
+Work around implemented 		   
++) I changed notification message in English.Created a short message for small screens.
+
+****************************
+* versionCode = 5          *
+* versionName = 1.0.4 Beta *
+****************************
++) Fixed bug. On Samsung Galaxy ACE doesn't work
+
+
+***************
+* ToDo Future *
+***************
++) Check configuration change on the fly=>update notification message
+
