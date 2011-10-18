@@ -44,6 +44,13 @@ At some devices, the function return null. The application uses AM/PM format by 
 Work around implemented 		   
 +) I changed notification message in English.Created a short message for small screens.
 
+****************************
+* versionCode = 5          *
+* versionName = 1.0.4 Beta *
+****************************
++) Fixed bug. On Samsung Galaxy ACE doesn't work
+
+
 ***************
 * ToDo Future *
 ***************
