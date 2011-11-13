@@ -19,8 +19,8 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="com.apa42.desconecta"
-      android:versionCode="5"
-      android:versionName="1.0.4 Beta">
+      android:versionCode="6"
+      android:versionName="1.0.5 Beta">
     <uses-sdk android:minSdkVersion="4" />
 
 	<supports-screens 

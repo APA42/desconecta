@@ -235,6 +235,20 @@ public class DesconectaActivity extends Activity
 		_timeDisplay.setText(TimeDisplay.toString());
 	}
 	
+	public void clickAirPlaneMode_TurnOn(View arg)
+	{
+		if (ConfigAppValues.DEBUG) Log.d(CLASS_NAME, "clickAirPlaneMode_TurnOn(View arg)");
+		//
+		Utils.setAirplaneMode(getApplicationContext(),true);
+	}
+
+	public void clickAirPlaneMode_TurnOff(View arg)
+	{
+		if (ConfigAppValues.DEBUG) Log.d(CLASS_NAME, "clickAirPlaneMode_TurnOff(View arg)");
+		//
+		Utils.setAirplaneMode(getApplicationContext(),false);
+	}
+
 	public void clickAlarmAirplaneMode(View arg)
 	{
 		if (ConfigAppValues.DEBUG) Log.d(CLASS_NAME, "clickAlarmAirplaneMode(View arg)" );
