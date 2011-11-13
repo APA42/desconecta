@@ -50,6 +50,12 @@ Work around implemented
 ****************************
 +) Fixed bug. On Samsung Galaxy ACE doesn't work
 
+****************************
+* versionCode = 6          *
+* versionName = 1.0.5 Beta *
+****************************
++) Added two buttons to activate or deactivate Airplane Mode right now.
+
 
 ***************
 * ToDo Future *

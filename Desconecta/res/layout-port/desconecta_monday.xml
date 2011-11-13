@@ -31,8 +31,8 @@
 	    android:layout_height="wrap_content"
 	    android:layout_below="@id/MainLayout"
 	    android:layout_centerHorizontal="true"
-	    android:layout_marginTop="15px"
-	    android:layout_marginBottom="8px"
+	    android:layout_marginTop="8px"
+	    android:layout_marginBottom="4px"
 	    android:layout_marginLeft="20px"
 	    android:layout_marginRight="20px">
 	    <Button 
@@ -57,8 +57,8 @@
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
 	    android:layout_below="@id/GetTime"
-   	    android:layout_marginTop="5px"
-	    android:layout_marginBottom="5px"
+   	    android:layout_marginTop="3px"
+	    android:layout_marginBottom="3px"
 	    android:layout_marginLeft="20px"
 	    android:layout_marginRight="20px"
 	    android:layout_centerHorizontal="true">
@@ -139,8 +139,8 @@
 	    android:layout_height="wrap_content"
 	    android:layout_below="@id/Days"
 	    android:layout_centerHorizontal="true"
-	    android:layout_marginTop="10px"
-	    android:layout_marginBottom="10px"
+	    android:layout_marginTop="5px"
+	    android:layout_marginBottom="5px"
 	    android:layout_marginLeft="20px"
 	    android:layout_marginRight="20px">
 	    <ToggleButton android:id="@+id/togglebuttonAlarmAirplaneMode"
@@ -151,5 +151,34 @@
 	        android:enabled="false"
 	        android:onClick="clickAlarmAirplaneMode">
 		</ToggleButton>
+	</RelativeLayout>
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/HeaderButtonsDirectActionsAirPlaneMode"
+		android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/HeaderActivateAirPlaneModeAlarm"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="2px"
+	    android:layout_marginBottom="2px"
+	    android:layout_marginLeft="8px"
+	    android:layout_marginRight="8px">
+	    <Button
+	        android:id="@+id/buttonAirplaneMode_TurnOn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/AirplaneMode_TurnOn"
+			android:layout_alignParentLeft="true"
+			android:onClick="clickAirPlaneMode_TurnOn">
+	    </Button>
+	    <Button
+	        android:id="@+id/buttonAirplaneMode_TurnOff"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/AirplaneMode_TurnOff"
+ 			android:layout_alignBaseline="@id/buttonAirplaneMode_TurnOn"
+	        android:layout_alignParentRight="true"
+	        android:onClick="clickAirPlaneMode_TurnOff">
+	    </Button>
 	</RelativeLayout>
 </RelativeLayout>

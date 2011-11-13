@@ -30,6 +30,8 @@
 	<string name="Friday">Vie.</string>
 	<string name="Saturday">Sáb.</string>
 	<string name="AllDays">Todos</string>
+	<string name="AirplaneMode_TurnOn">Modo Avión: On</string>
+	<string name="AirplaneMode_TurnOff">Mod Avión: Off</string>
 	<!-- Notifications -->
 	<string name="NotificationText">Modo Avión se activará el</string>
 </resources>

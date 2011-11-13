@@ -35,6 +35,8 @@
 	<string name="Friday">Fri.</string>
 	<string name="Saturday">Sat.</string>
 	<string name="AllDays">All</string>
+	<string name="AirplaneMode_TurnOn">Airplane Mode:  On</string>
+	<string name="AirplaneMode_TurnOff">Airplane Mode: Off</string>
 	<!-- Notifications -->
 	<!-- <string name="NotificationText">Airplane Mode will Turn On at</string> -->
 	<!--  Better for small screens  -->
