@@ -18,6 +18,10 @@
     along with Desconecta.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources>
+   	<string name="app_name">Desconecta</string>
+	<string name="DefaultTimeDisplay">00:42</string>
+	<string name="TIME_FORMAT_AM">AM</string>
+	<string name="TIME_FORMAT_PM">PM</string>
 	<!-- Language Dependent -->
     <string name="WhatTime">¿A qué hora?</string>
     <string name="AlarmAirPlaneOn">Desactivar</string>
